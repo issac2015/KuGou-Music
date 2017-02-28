@@ -1,0 +1,101 @@
+/* pages/music/music.wxss */
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.title {
+  padding-top:20rpx;
+  padding-bottom: 5rpx;
+  width: 100%;
+  text-align: center;
+  border-bottom:1rpx solid #aaa;
+}
+
+.list-scroll{
+  height:1080rpx;
+}
+.list {
+  overflow: hidden;
+  padding:20rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.list.select {
+  color : green;
+}
+.list .icon{
+  width:50rpx;
+  height:50rpx;
+  border-radius: 50%;
+  background-color:#d5f3e0;
+  float: left;
+  text-align: center;
+  line-height: 50rpx;
+}
+.list .icon.nobg{
+  background: none;
+}
+.list .name {
+  float:left;
+  margin-left:10rpx;
+  width:88%;
+
+}
+
+.bindKeyInput{
+  margin-left: 8rpx;
+  width:80%;
+  margin: 2px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  line-height:1.6rem;
+  height:1.6rem;
+  display: block;
+  float:left;
+}
+.bindKeyInput:hover{
+  border-color: #66afe9;
+  display: block;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.songSearch{
+  width:15%;
+  height:1.7rem;
+  line-height:1.7rem;
+  color: #fff;
+  background-color: #449d44;
+  padding:0px;
+  display: block;
+  margin:2px;
+  top:2px;
+}
+
+.odd{
+  background-color: #f9f9f9;
+}
+
+
+

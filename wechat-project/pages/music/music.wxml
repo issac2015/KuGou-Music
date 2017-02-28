@@ -1,0 +1,30 @@
+<!--pages/music/music.wxml-->
+<view class="serchDIV">
+  <input type="text" class="bindKeyInput" bindinput="bindKeyInput" placeholder="Search Songs" auto-focus/>
+  <button class="songSearch" bindtap="musicSerch" data-val='{{inputValue}}'>搜索</button>
+</view>
+
+<view class="audioView">
+  <audio poster="{{audio.poster}}" name="{{audio.name}}" author="{{audio.author}}" src="{{audio.src}}" id="myAudio" controls loop></audio>
+</view>
+
+<view class="container"> 
+  <loading hidden="{{!isload}}"> 
+    加载中...
+  </loading>
+
+  <scroll-view class="list-scroll" scroll-y="true" bindscrolltolower="scrollEnd"> 
+    <block wx:for="{{list}}" wx:for-item="song" wx:for-index="index"> 
+      <view class="list {{index == playIndex?'select':''}} {{index  % 2 == 0 ? '' :'odd'}}" data-id="{{index}}" data-hash="{{song.hash}}" bindtap="searchPlay">
+        <view class="icon nobg" wx:if="{{index == playIndex}}">
+          <icon type="success" size="25"/> 
+        </view>
+        <view class="icon" wx:else>{{index+1}}</view>
+        <text class="name">{{song.filename}}</text> 
+      </view>
+    </block>
+  </scroll-view>
+
+</view>
+
+

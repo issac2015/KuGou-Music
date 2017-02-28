@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<import src="../../wxParse/wxParse.wxml"/> 
+<view>
+      <text >大话精灵 -- 免费版</text>
+      <input bindinput="bindKeyInput" placeholder="Search For Questions" auto-focus/>
+      <button bindtap="bindButtonTap" data-val='{{inputValue}}'>搜索</button>
+      <text>你输入的是：</text>
+      <!--
+      <view class="section__title" id='test'>{{dataserach}}</view>
+      -->
+</view>
+
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+
+

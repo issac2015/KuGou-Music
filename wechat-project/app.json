@@ -1,0 +1,37 @@
+{
+  "pages":[
+    
+    "pages/music/music",
+    "pages/index/index",
+    "pages/test/test",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar":{
+     "color":"#a9b7b7",
+     "selectedColor":"#eb4f38",
+     "borderStyle":"black",
+     "backgroundColor":"#ffffff",
+     "list":[
+       {
+         "pagePath":"pages/music/music",
+         "text":"搜索",
+         "iconPath":"./static/images/searchN.png",
+         "selectedIconPath":"./static/images/searchS.png"
+       },
+       {
+         "pagePath":"pages/index/index",
+         "text":"Top500",
+         "iconPath":"static/images/wordN.png",
+         "selectedIconPath":"static/images/wordS.png"
+       }
+    ]
+  }
+}
